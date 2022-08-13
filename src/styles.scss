@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body
+{
+    width: 100%;
+}
+table 
+{
+    text-align: center;
+}
+thead
+{
+    background-color: #353535;
+    color:white;
+    font-weight: bold;
+}
+td , th {
+    border: 1px solid #000000;
+    padding: 15px 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
