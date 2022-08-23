@@ -1,43 +1,44 @@
 import { Component } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from'@angular/material/dialog';
 
-export interface HorarioAula {
-  Segunda: string;
-  Terca: string;
-  Quarta: string;
-  QuintaPar: string;
-  QuintaImp: string;
-  Sexta: string;
+export interface DialogData {
+  animal: string;
+  name: string;
 }
-
-const ELEMENT_DATA: HorarioAula[] = [
-  { Segunda: 'Qualidade de Software',
-    Terca: 'Des. de Sistemas Distribuidos',
-    Quarta: 'Qualidade de Software',
-    QuintaPar: 'Trabalho de Curso II',
-    QuintaImp: 'Orientação - Estágio',
-    Sexta: '-' 
-  },
-  { Segunda: 'Qualidade de Software',
-    Terca: 'Des. de Sistemas Distribuidos',
-    Quarta: 'Qualidade de Software',
-    QuintaPar: 'Trabalho de Curso II',
-    QuintaImp: 'Orientação - Estágio',
-    Sexta: '-' 
-  },
-]
-  
- 
-
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  displayedColumns: string[] = ['Segunda', 'Terça', 'Quarta', 'QuintaPar', 'QuintaImp', 'Sexta'];
-  dataSource = ELEMENT_DATA;
-  title = 'Unip';
   panelOpenState = false;
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(QualidadeDeSoftwareComponent, {
+      width: '250px',
+
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+
+    });
+  }
+
+}
+
+
+export class QualidadeDeSoftwareComponent {
+  constructor(
+    public dialogRef: MatDialogRef<QualidadeDeSoftwareComponent>,
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
 }
