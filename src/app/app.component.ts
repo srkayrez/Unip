@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MatTableModule } from '@angular/material/table';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from'@angular/material/dialog';
+import { QualidadeDeSoftwareComponent } from './qualidade-de-software/qualidade-de-software.component';
 
 export interface DialogData {
   animal: string;
@@ -16,11 +16,12 @@ export interface DialogData {
 export class AppComponent {
   panelOpenState = false;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog,
+    ) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(QualidadeDeSoftwareComponent, {
-      width: '250px',
+      width: '500px',
 
     });
 
@@ -30,15 +31,8 @@ export class AppComponent {
     });
   }
 
+
 }
 
 
-export class QualidadeDeSoftwareComponent {
-  constructor(
-    public dialogRef: MatDialogRef<QualidadeDeSoftwareComponent>,
-  ) {}
 
-  onNoClick(): void {
-    this.dialogRef.close();
-  }
-}
