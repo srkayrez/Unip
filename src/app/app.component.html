@@ -28,160 +28,128 @@
       </div>
   </div>
 </nav>
-<div class="pt-20 pb-3 text-center bg-fixed" style="background-image:url('https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_960_720.jpg'); background-position: center -80px;  background-size: cover; background-repeat: no-repeat;">
-  <span class="text-center text-5xl font-semibold text-white">
+<div class="py-20 text-center bg-fixed" style="background-image:url('https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_960_720.jpg'); background-position: center -80px;  background-size: cover; background-repeat: no-repeat;">
+  <span class="text-center text-5xl font-sans-serfi text-white">
     Ciência da Computação
   </span>
-<br>
-<br>
-<br>
-<br>
-<br>
- 
+
 </div>
 
-<div class="botoes flex justify-center pt-3 w-full items-center">
-  <button mat-raised-button color="primary" class="hover:bg-stone-500 mat-focus-indicator rounded-full ml-2 ng-tns-c209-384 mat-button-base mat-accent bg-stone-800">
+<div class="botoes flex justify-center pt-5 w-full items-center bg-stone-600">
+  <button mat-raised-button color="primary" class="hover:bg-stone-500 mat-focus-indicator rounded-lg ml-2 ng-tns-c209-384 mat-button-base mat-accent bg-stone-800">
     <span class="mat-button-wrapper text-white">
       Conteudo 7º Semestre
     </span>
   </button>
 
-  <button mat-raised-button color="primary" class="hover:bg-stone-500 mat-focus-indicator rounded-full ml-2 ng-tns-c209-384 mat-button-base mat-accent bg-stone-800">
+  <button mat-raised-button color="primary" class="hover:bg-stone-500 mat-focus-indicator rounded-lg ml-2 ng-tns-c209-384 mat-button-base mat-accent bg-stone-800">
     <span class="mat-button-wrapper text-white">
       APS
     </span>
   </button>
 
-  <button mat-raised-button color="primary" class="hover:bg-stone-500 mat-focus-indicator rounded-full ml-2 ng-tns-c209-384 mat-button-base mat-accent bg-stone-800">
+  <button mat-raised-button color="primary" class="hover:bg-stone-500 mat-focus-indicator rounded-lg ml-2 ng-tns-c209-384 mat-button-base mat-accent bg-stone-800">
     <span class="mat-button-wrapper text-white">
       Calendario de provas
     </span>
   </button>
 </div>
-<div class="bg-gray-200 w-full justify-center">
-  <div class="px-20 bg-white py-3 rounded-lg ">
-    <table  class="justify-center w-full border-none items-center" mat-table #table [dataSource]="dataSource">
 
-      <ng-container matColumnDef="Segunda">
-        <th mat-header-cell *matHeaderCellDef> Segunda </th>
-        <td mat-cell *matCellDef="let element"> {{element.Segunda}} </td>
-      </ng-container>
-    
-      <ng-container matColumnDef="Terça">
-        <th mat-header-cell *matHeaderCellDef> Terça </th>
-        <td mat-cell *matCellDef="let element"> {{element.Terca}} </td>
-      </ng-container>
-    
-      <ng-container matColumnDef="Quarta">
-        <th mat-header-cell *matHeaderCellDef> Quarta </th>
-        <td mat-cell *matCellDef="let element"> {{element.Quarta}} </td>
-      </ng-container>
+<div class="bg-stone-600 p-5">
 
-      <ng-container matColumnDef="QuintaPar">
-        <th mat-header-cell *matHeaderCellDef> Quinta Par</th>
-        <td mat-cell *matCellDef="let element"> {{element.QuintaPar}} </td>
-      </ng-container>
+    <table class="text-center bg-white rounded-lg">
+      <thead>
+          <tr>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta Par</th>
+              <th>Quinta Imp</th>
+              <th>Sexta</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td> Qualidade de Software </td>
+              <td> Des. de Sistemas Distribuidos </td>
+              <td> - </td>
+              <td> Trabalho de Curso II </td>
+              <td> Orientação - Estágio </td>
+              <td> - </td>
 
-      <ng-container matColumnDef="QuintaImp">
-        <th mat-header-cell *matHeaderCellDef> Quinta Impar </th>
-        <td mat-cell *matCellDef="let element"> {{element.QuintaImp}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="Sexta">
-        <th mat-header-cell *matHeaderCellDef> Sexta </th>
-        <td mat-cell *matCellDef="let element"> {{element.Sexta}} </td>
-      </ng-container>
-    
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </tr>
+          <tr>
+              <td> Qualidade de Software </td>
+              <td> Des. de Sistemas Distribuidos </td>
+              <td> - </td>
+              <td> Trabalho de Curso II </td>
+              <td> Orientação - Estágio </td>
+              <td> - </td>
+          </tr>
+      </tbody>
     </table>
-  </div>
+
+</div>
+<div class="p-5 px-20 bg-stone-600">
+  <mat-accordion class="text-center items-center justify-center">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false">
+      <mat-expansion-panel-header class="w-full justify-center justify-self-center text-center">
+        <mat-panel-title class="justify-center">
+          E-mails
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+        <p>Coordenadora Eduarda: eduarda.carvalho@docente.unip.br</p>
+        <p>Professora Karen: karem.marcomini@docente.unip.br</p>
+        <p>Professor Leandro: leandro.fernandes@docente.unip.br</p>
+        <p>Professor João Paulo: joao.santos2@docente.unip.br</p>
+        <p>Professor Léo Paschoal: leo.paschoal@docente.unip.br</p>
+        <p>Professor Noel: noel.moreira@docente.unip.br</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+
+  <mat-divider></mat-divider>
+
+
+  <mat-accordion class="text-center items-center py-5 justify-center">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false">
+      <mat-expansion-panel-header class="w-full justify-center justify-self-center text-center">
+        <mat-panel-title class="justify-center text-center">
+          Trabalhos
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+        <p>Nenhum trabalho por aqui =)</p>
+
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>
 
-
-<div class="p-3 justify-center">  
-  <table class="w-3/4">
-    <thead>
-        <tr>
-            <th>Segunda</th>
-            <th>Terça</th>
-            <th>Quarta</th>
-            <th>Quinta Par</th>
-            <th>Quinta Imp</th>
-
-            <th>Sexta</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td> Qualidade de Software </td>
-            <td> Des. de Sistemas Distribuidos </td>
-            <td> - </td>
-            <td> Trabalho de Curso II </td>
-            <td> Orientação - Estágio </td>
-            <td> - </td>
-            
-        </tr>
-        <tr>
-            <td> Qualidade de Software </td>
-            <td> Des. de Sistemas Distribuidos </td>
-            <td> - </td>
-            <td> Trabalho de Curso II </td>
-            <td> Orientação - Estágio </td>
-            <td> - </td>
-        </tr>
-    </tbody>
-  </table>
-</div>
-
-<mat-accordion class="text-center items-center justify-center">
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
-    <mat-expansion-panel-header class="w-full justify-center justify-self-center text-center">
-      <mat-panel-title class="justify-center">
-        E-mails dos professores
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <p>Coordenadora Eduarda: eduarda.carvalho@docente.unip.br<br>
-
-      <p>Professora Karen: karem.marcomini@docente.unip.br</p>
-      
-      <p>Professor Leandro: leandro.fernandes@docente.unip.br</p>
-      
-      <p>Professor João Paulo: joao.santos2@docente.unip.br</p>
-      
-      <p>Professor Léo Paschoal: leo.paschoal@docente.unip.br</p>
-      
-      <p>Professor Noel: noel.moreira@docente.unip.br</p>
-  </mat-expansion-panel>
-</mat-accordion>
-<div class="w-full p-3 justify-center justify-self-center"  align="center" >
-  <iframe class="justify-center content-center" src="https://calendar.google.com/calendar/embed?src=ivihnpqmpsoai31f3dqt89m03c%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="50%" height="500px" frameborder="0" scrolling="no" align = "middle"></iframe>
-</div>
-
-<mat-divider></mat-divider>
-
-<div class="py-3 text-center">
-  <span class="text-center text-5xl font-semibold text-black">
-    Trabalhos
-  </span>
-</div> 
-
-<form>
-  <div class="mb-6">
-    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required="">
-  </div>
-  <div class="mb-6">
-    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your password</label>
-    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
-  </div>
-  <div class="flex items-start mb-6">
-    <div class="flex items-center h-5">
-      <input id="remember" type="checkbox" value="" class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="">
+<div class="p-5 px-20 bg-stone-600">
+  <div class="bg-whiter rounded-lg">
+    <div class="w-full p-3 justify-center rounded-lg justify-self-center"  align="center" >
+      <iframe class="justify-center content-center  rounded-lg" src="https://calendar.google.com/calendar/embed?src=ivihnpqmpsoai31f3dqt89m03c%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="50%" height="500px" frameborder="0" scrolling="no" align = "middle"></iframe>
     </div>
-    <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
-  </div>
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-</form>
+</div>
+</div>
+
+<div class="p-5 px-20 text-center bg-stone-600">
+  <span class="text-5xl font-sans-serfi text-white">
+    Datas de entrega
+  </span>
+</div>
+
+<div class="p-5 px-20 text-center bg-stone-600">
+  <span class="text-5xl font-sans-serfi text-white">
+    Calendario
+  </span>
+</div>
+
+<!-- --------------------------------------------------------- Materias presenciais ------------------------------------------ -->
+
+<div class="p-5 px-20 text-center bg-stone-600">
+  <span class="text-5xl font-sans-serfi text-white">
+    MATÉRIAS PRESENCIAS
+  </span>
+</div>
