@@ -11,13 +11,22 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { QualidadeDeSoftwareComponent } from './qualidade-de-software/qualidade-de-software.component';
+import { HorasComplementaresComponent } from './horas-complementares/horas-complementares.component';
+import { DesSistemasDistribuidosComponent } from './des-sistemas-distribuidos/des-sistemas-distribuidos.component';
+import { OrientacaoEstagioComponent } from './orientacao-estagio/orientacao-estagio.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    QualidadeDeSoftwareComponent
-  ],
+    QualidadeDeSoftwareComponent,
+    HorasComplementaresComponent,
+    DesSistemasDistribuidosComponent,
+    OrientacaoEstagioComponent,
+
+   ],
   imports: [
 
     BrowserModule,
