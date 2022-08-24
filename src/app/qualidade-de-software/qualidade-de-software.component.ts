@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-qualidade-de-software',
   templateUrl: './qualidade-de-software.component.html',
