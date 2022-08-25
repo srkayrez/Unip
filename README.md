@@ -1,6 +1,6 @@
 # Site Ciência da computação
 
-Link do site: https://srkayrez.github.io/Unip/
+Link do site: <a target: "_blank" href="https://srkayrez.github.io/Unip/">Aqui</a>
 
 ## Site desenvolvido para estudo sobre Angular e TypeScript
 
