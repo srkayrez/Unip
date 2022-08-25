@@ -2,5 +2,8 @@
 
 Link do site: https://srkayrez.github.io/Unip/
 
-## Site desenvolvido para ajudar meus colegas de curso, onde posto o conteudo da aula e os resumos
+## Site desenvolvido para estudo sobre Angular e TypeScript
 
+### inicialmente o site era feito usando a ferramenta do Google Sites para melhor aproveitamento do tempo, por ser de facil uso!
+
+  Atualmente o site esta sendo produzido ultilizando angular para estudos referentes ao meu trabalho atual!
