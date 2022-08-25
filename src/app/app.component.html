@@ -55,42 +55,42 @@
   </button>
 </div>
 
-<div class="bg-stone-600 p-5">
+<div class="bg-stone-600 p-2">
 
     <table class="text-center bg-white rounded-lg">
       <thead>
           <tr>
               <th>Segunda</th>
               <th>Terça</th>
-              <th>Quarta</th>
+              <!-- <th>Quarta</th> -->
               <th>Quinta Par</th>
               <th>Quinta Imp</th>
-              <th>Sexta</th>
+              <!-- <th>Sexta</th> -->
           </tr>
       </thead>
       <tbody>
           <tr>
               <td> Qualidade de Software </td>
               <td> Des. de Sistemas Distribuidos </td>
-              <td> - </td>
+              <!-- <td> - </td> -->
               <td> Trabalho de Curso II </td>
               <td> Orientação - Estágio </td>
-              <td> - </td>
+              <!-- <td> - </td> -->
 
           </tr>
           <tr>
               <td> Qualidade de Software </td>
               <td> Des. de Sistemas Distribuidos </td>
-              <td> - </td>
+              <!-- <td> - </td> -->
               <td> Trabalho de Curso II </td>
               <td> Orientação - Estágio </td>
-              <td> - </td>
+              <!-- <td> - </td> -->
           </tr>
       </tbody>
     </table>
 
 </div>
-<div class="p-5 px-20 bg-stone-600">
+<div class="p-5 bg-stone-600">
   <mat-accordion class="text-center items-center justify-center">
     <mat-expansion-panel (opened)="panelOpenState = true"
                         (closed)="panelOpenState = false">
@@ -109,7 +109,7 @@
   </mat-accordion>
 
 
-  <mat-divider></mat-divider>
+  <br>
 
 
   <mat-accordion class="text-center items-center py-5 justify-center">
@@ -126,22 +126,14 @@
   </mat-accordion>
 </div>
 
-<div class="p-5 px-20 bg-stone-600">
-  <div class="bg-whiter rounded-lg">
-    <div class="w-full p-3 justify-center rounded-lg justify-self-center"  align="center" >
-      <iframe class="justify-center content-center  rounded-lg" src="https://calendar.google.com/calendar/embed?src=ivihnpqmpsoai31f3dqt89m03c%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="50%" height="500px" frameborder="0" scrolling="no" align = "middle"></iframe>
-    </div>
-</div>
-</div>
-
 <div class="p-5 px-20 text-center bg-stone-600">
-  <span class="text-5xl font-sans-serfi text-white">
+  <span class="text-3xl font-sans-serfi text-white">
     Datas de entrega
   </span>
 </div>
 
 <div class="p-5 px-20 text-center bg-stone-600">
-  <span class="text-5xl font-sans-serfi text-white">
+  <span class="text-3xl font-sans-serfi text-white">
     Calendario
   </span>
 </div>
@@ -149,12 +141,12 @@
 <!-- --------------------------------------------------------- Materias presenciais ------------------------------------------ -->
 
 <div class="py-5 px-20 text-center bg-stone-600">
-  <span class=" text-5xl font-sans-serfi text-white">
+  <span class=" text-3xl font-sans-serfi text-white">
     MATÉRIAS PRESENCIAS
   </span>
 <br>
 <br>
-  <button mat-raised-button color="primary" (click)="openQS()" class="mat-focus-indicator p-5 w-1/2 hover:bg-stone-500 rounded-lg bg-stone-800">
+  <button mat-raised-button color="primary" (click)="openQS()" class="mat-focus-indicator p-5 w-full hover:bg-stone-500 rounded-lg bg-stone-800">
     <span class="text-white">
       Qualidade de Software
     </span>
@@ -163,7 +155,7 @@
   <br>
   <br>
 
-  <button mat-raised-button color="primary" (click)="openOC()" class="mat-focus-indicator p-5 w-1/2 hover:bg-stone-500 rounded-lg bg-stone-800">
+  <button mat-raised-button color="primary" (click)="openOC()" class="mat-focus-indicator p-5 w-full hover:bg-stone-500 rounded-lg bg-stone-800">
     <span class="text-white">
       Horas complementares
     </span>
@@ -172,7 +164,7 @@
   <br>
   <br>
 
-  <button mat-raised-button color="primary" (click)="openDSD()" class="mat-focus-indicator p-5 w-1/2 hover:bg-stone-500 rounded-lg bg-stone-800">
+  <button mat-raised-button color="primary" (click)="openDSD()" class="mat-focus-indicator p-5 w-full hover:bg-stone-500 rounded-lg bg-stone-800">
     <span class="text-white">
       Des. Sistemas Distribuidos
     </span>
@@ -181,7 +173,7 @@
   <br>
   <br>
 
-  <button mat-raised-button color="primary" (click)="openOE()" class="mat-focus-indicator p-5 w-1/2 hover:bg-stone-500 rounded-lg bg-stone-800">
+  <button mat-raised-button color="primary" (click)="openOE()" class="mat-focus-indicator p-5 w-full hover:bg-stone-500 rounded-lg bg-stone-800">
     <span class="text-white">
       Orientação de estágio
     </span>
