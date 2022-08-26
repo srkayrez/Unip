@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-horas-complementares',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HorasComplementaresComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dialogRef: MatDialogRef<HorasComplementaresComponent>
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  closeModal(): void {
+    this.dialogRef.close();
   }
 
 }

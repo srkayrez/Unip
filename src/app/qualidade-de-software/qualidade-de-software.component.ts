@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-qualidade-de-software',
@@ -8,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QualidadeDeSoftwareComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dialogRef: MatDialogRef<QualidadeDeSoftwareComponent>
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  closeModal(): void {
+    this.dialogRef.close();
   }
 
 }

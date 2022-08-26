@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-orientacao-estagio',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrientacaoEstagioComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dialogRef: MatDialogRef<OrientacaoEstagioComponent>
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  closeModal(): void {
+    this.dialogRef.close();
   }
 
 }
