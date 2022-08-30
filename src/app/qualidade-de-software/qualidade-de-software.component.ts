@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-qualidade-de-software',
   templateUrl: './qualidade-de-software.component.html',
-  styleUrls: ['./qualidade-de-software.component.scss']
+  styleUrls: ['./qualidade-de-software.component.scss'],
+  changeDetection : ChangeDetectionStrategy.OnPush,
 })
 export class QualidadeDeSoftwareComponent implements OnInit {
 

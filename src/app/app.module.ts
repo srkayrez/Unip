@@ -14,7 +14,7 @@ import { QualidadeDeSoftwareComponent } from './qualidade-de-software/qualidade-
 import { HorasComplementaresComponent } from './horas-complementares/horas-complementares.component';
 import { DesSistemasDistribuidosComponent } from './des-sistemas-distribuidos/des-sistemas-distribuidos.component';
 import { OrientacaoEstagioComponent } from './orientacao-estagio/orientacao-estagio.component';
-
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 
 
@@ -28,7 +28,7 @@ import { OrientacaoEstagioComponent } from './orientacao-estagio/orientacao-esta
 
    ],
   imports: [
-
+    ScrollingModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
