@@ -15,6 +15,10 @@ import { HorasComplementaresComponent } from './horas-complementares/horas-compl
 import { DesSistemasDistribuidosComponent } from './des-sistemas-distribuidos/des-sistemas-distribuidos.component';
 import { OrientacaoEstagioComponent } from './orientacao-estagio/orientacao-estagio.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { EDComponent } from './ed/ed.component';
+import { AVACompiladoresComponent } from './avacompiladores/avacompiladores.component';
+import { AVAEmpreendedorismoComponent } from './avaempreendedorismo/avaempreendedorismo.component';
+import { AVATopicosComponent } from './avatopicos/avatopicos.component';
 
 
 
@@ -25,6 +29,10 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     HorasComplementaresComponent,
     DesSistemasDistribuidosComponent,
     OrientacaoEstagioComponent,
+    EDComponent,
+    AVACompiladoresComponent,
+    AVAEmpreendedorismoComponent,
+    AVATopicosComponent,
 
    ],
   imports: [
