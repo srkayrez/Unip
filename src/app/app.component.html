@@ -36,13 +36,12 @@
 </div>
 
 <div class="botoes flex justify-center pt-5 w-full items-center bg-stone-600">
-  <button mat-raised-button color="primary" class="hover:bg-stone-500 mat-focus-indicator rounded-lg ml-2 ng-tns-c209-384 mat-button-base mat-accent bg-stone-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-      <a target="_blank" href="https://sites.google.com/view/links-2021-cc-unip/7%C2%BA-semestre?authuser=0">
+  <button mat-raised-button onClick="window.open ('https://sites.google.com/view/links-2021-cc-unip/7%C2%BA-semestre?authuser=0', '_blank')" color="primary" class="hover:bg-stone-500 mat-focus-indicator rounded-lg ml-2 ng-tns-c209-384 mat-button-base mat-accent bg-stone-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
       <span class="mat-button-wrapper text-white">
         7º Semestre
       </span>
-    </a>
     </button>
+
 
   <button mat-raised-button color="primary" class="hover:bg-stone-500 mat-focus-indicator rounded-lg ml-2 ng-tns-c209-384 mat-button-base mat-accent bg-stone-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
     <span class="mat-button-wrapper text-white">
@@ -50,7 +49,7 @@
     </span>
   </button>
 
-  <button mat-raised-button color="primary" class="hover:bg-stone-500 mat-focus-indicator rounded-lg ml-2 ng-tns-c209-384 mat-button-base mat-accent bg-stone-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+  <button mat-raised-button color="primary" onClick="window.open ('https://drive.google.com/file/d/1rijAg_X92Xfwalz7BSIUYv-Gw1zGlMQf/view?usp=sharing', '_blank')" class="hover:bg-stone-500 mat-focus-indicator rounded-lg ml-2 ng-tns-c209-384 mat-button-base mat-accent bg-stone-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
     <span class="mat-button-wrapper text-white">
       Provas
     </span>
@@ -127,19 +126,53 @@
 
     </mat-expansion-panel>
   </mat-accordion>
+
+
+  <br>
+  <br>
+
+
+  <mat-accordion class="text-center items-center py-5 justify-center">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header class="w-full justify-center justify-self-center text-center">
+        <mat-panel-title class="justify-center text-center">
+          Calendario de provas e trabalhos
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p> Qualidade de Software <b>19/09/2022</b> </p>
+      <p> Des. de Sistemas Distribuidos <b>20/09/2022</b> </p>
+      <p> AVA até dia <b>24/10/2022</b> </p>
+        <div class="p-2">
+
+          <table class="text-center bg-white rounded-lg">
+            <thead>
+                <tr>
+                  <th> Prova </th>
+                  <th> Dia </th>
+                  <th> Hora </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td> Qualidade de Software </td>
+                  <td> 19/09 </td>
+                  <td> 19:10 / 21:00 </td>
+                </tr>
+                <tr>
+                  <td> Des. de Sistemas Distribuidos </td>
+                  <td> 20/09 </td>
+                  <td> 19:10 / 21:00 </td>
+                </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>
 
-<div class="p-5 px-20 text-center bg-stone-600">
-  <span class="text-3xl font-sans-serfi text-white">
-    Datas de entrega
-  </span>
-</div>
-
-<div class="p-5 px-20 text-center bg-stone-600">
-  <span class="text-3xl font-sans-serfi text-white">
-    Calendario
-  </span>
-</div>
 
 <!-- --------------------------------------------------------- Materias presenciais ------------------------------------------ -->
 

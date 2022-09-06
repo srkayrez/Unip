@@ -19,7 +19,8 @@ import { EDComponent } from './ed/ed.component';
 import { AVACompiladoresComponent } from './avacompiladores/avacompiladores.component';
 import { AVAEmpreendedorismoComponent } from './avaempreendedorismo/avaempreendedorismo.component';
 import { AVATopicosComponent } from './avatopicos/avatopicos.component';
-
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -47,6 +48,8 @@ import { AVATopicosComponent } from './avatopicos/avatopicos.component';
     MatDividerModule,
     MatTableModule,
     MatDialogModule,
+    MatDatepickerModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
