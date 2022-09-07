@@ -141,7 +141,168 @@
 
     </mat-expansion-panel>
   </mat-accordion>
+
+
+  <br>
+  <br>
+
+
+  <mat-accordion class="text-center items-center py-5 justify-center">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+    <mat-expansion-panel-header class="w-full justify-center justify-self-center text-center">
+      <mat-panel-title class="justify-center text-center">
+        TCC
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div class="p-2">
+
+      <table class="text-center bg-white font-bold rounded-lg">
+        <thead>
+          <tr>
+            <th> Estrutura </th>
+            <th>  </th>
+            <th> Elemento </th>
+            <th> Opção </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-blue-600"> Parte externa </td>
+            <td>  </td>
+            <td class="text-red-500"> Capa </td>
+            <td class="text-red-500"> Obrigatório </td>
+          </tr>
+          <tr>
+            <td class="text-blue-600"> Parte externa </td>
+            <td>  </td>
+            <td class="text-lime-500"> Lombada </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+          <tr>
+            <td class="text-rose-600" class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-red-500"> Folha de Rosto </td>
+            <td class="text-red-500"> Obrigatório </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-lime-500"> Errata </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-red-500"> Folha de aprovação </td>
+            <td class="text-red-500"> Obrigatório </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-lime-500"> Dedicatória </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-lime-500"> Epigrafe </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-red-500"> Resumo na língua Vernácula </td>
+            <td class="text-red-500"> Obrigatório </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-red-500"> Resumo em Língua Estrangeira </td>
+            <td class="text-red-500"> Obrigatório </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-lime-500"> Lista de ilustrações </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-lime-500"> Lista de Tabelas </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-lime-500"> Lista de abreviaturas e siglas </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-lime-500"> Lista de símbolos </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-fuchsia-600"> Elementos Pré-Textuais </td>
+            <td class="text-red-500"> Sumario </td>
+            <td class="text-red-500"> Obrigatório </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-yellow-600"> Elementos Textuais </td>
+            <td class="text-red-500"> Introdução </td>
+            <td class="text-red-500"> Obrigatório </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-yellow-600"> Elementos Textuais </td>
+            <td class="text-red-500"> Desenvolvimento </td>
+            <td class="text-red-500"> Obrigatório </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-yellow-600"> Elementos Textuais </td>
+            <td class="text-red-500"> Conclusão </td>
+            <td class="text-red-500"> Obrigatório </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-blue-600"> Elementos Pós-Textuais </td>
+            <td class="text-lime-500"> Glossário </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-blue-600"> Elementos Pós-Textuais </td>
+            <td class="text-lime-500"> Apêndice (s) </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-blue-600"> Elementos Pós-Textuais </td>
+            <td class="text-lime-500"> Anexo (s) </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+          <tr>
+            <td class="text-pink-600"> Parte Interna </td>
+            <td class="text-blue-600"> Elementos Pós-Textuais </td>
+            <td class="text-lime-500"> Índice (s) </td>
+            <td class="text-lime-500"> Opcional </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>
+
 
 
 <!-- --------------------------------------------------------- Materias presenciais ------------------------------------------ -->
@@ -227,6 +388,5 @@
       AVA - Tópicos de Atuação Profissional
     </span>
   </button>
-
 
 </div>
